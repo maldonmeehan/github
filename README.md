@@ -25,11 +25,13 @@ $ gulp build
 ```
 $ gulp serve
 ```
-apiKey:
-* get a github API key
-* create a file called ".env" in the top level of the directory, with this:
+#### apiKey
+* get a github API key (github calls them Personal access tokens).
+* create a file called ".env" in the top level of the directory.
 
-exports.apiKey = "insert-api-key-here";
+| .env |
+| ------------- |
+| exports.apiKey = "API-KEY-GOES-HERE"; |
 
 ## Known Bugs
 
