@@ -12,6 +12,8 @@ Repo.prototype.getRepos = function(userName){
     $('.showImg').append("<img src=" + response.avatar_url + ">");
     $('.showNumberOfRepos').empty();
     $('.showNumberOfRepos').append('<h3>Number of Repos: ' + response.public_repos + '</h3>');
+    $('.showFollowers').empty();
+    $('.showFollowers').append('<h3>Followers: ' + response.followers + '</h3>');
   }).fail(function(error){
 });
 
