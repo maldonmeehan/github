@@ -25,7 +25,9 @@ $ gulp build
 ```
 $ gulp serve
 ```
-* apiKey: c97ce33ffb1c454a13178af8e7eddaf458d15c7a
+* apiKey: You will need to use a github API key, and create a file called ".env" in the top level of the directory, with this:
+
+exports.apiKey = "API-KEY-GOES-HERE";
 
 ## Known Bugs
 
@@ -41,6 +43,7 @@ If you run into any issues or have questions, ideas, or concerns, please feel fr
 * jQuery
 * Bower
 * NPM
+* GitHub API
 
 ### License
 
