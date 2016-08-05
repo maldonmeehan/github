@@ -29,7 +29,7 @@ apiKey:
 * get a github API key
 * create a file called ".env" in the top level of the directory, with this:
 
-exports.apiKey = "API-KEY-GOES-HERE";
+exports.apiKey = "insert-api-key-here";
 
 ## Known Bugs
 

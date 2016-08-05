@@ -1,9 +1,14 @@
 var apiKey = require('./../.env').apiKey;
 
-exports.getRepos = function(){
-  $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
+exports.Repo = function(){
+};
+
+exports.Repo.prototype.getRepos = function(userName){
+  $.get('https://api.github.com/users/' + userName + '?access_token=' + apiKey).then(function(response){
+    $('.showUserName').empty();
+    $('.showUserName').append('<h3>Username: '  + response.login + '</h3>');
     console.log(response);
   }).fail(function(error){
-    console.log(error.responseJSON.message);
+    console.log(error.responseJSON.Repo);
   });
 };

@@ -1,20 +1,12 @@
-
-var Constructor = require('./../js/other-template.js').constructorModule;
-
-
-$(document).ready(function() {
-  $('#generic-form').submit(function(event) {
-    event.preventDefault();
-
-  });
-});
-
-var Constructor = require('./../js/template.js').constructorModule;
-
+var apiKey = require('./../.env').apiKey;
+var Repo = require('./../js/github.js').Repo;
 
 $(document).ready(function() {
-  $('#generic-form').submit(function(event) {
+  var newUser = new Repo();
+  $("#formId").submit(function(event) {
     event.preventDefault();
-
+    var userName = $('#userInput').val();
+    $('#userInput').val('');
+    newUser.getRepos(userName);
   });
 });
