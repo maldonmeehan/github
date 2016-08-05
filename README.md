@@ -11,7 +11,7 @@ Create a website where the user can enter a GitHub username into a form, submit 
 
 ## Setup/Installation Requirements
 
-* Clone this repository:
+* Clone this repository
 * In the command-line run:
 ```
 $ npm install
