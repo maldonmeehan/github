@@ -1,7 +1,7 @@
 var apiKey = require('./../.env').apiKey;
 
 function Repo(userName){
-  this.userName = userName;
+  
 }
 
 Repo.prototype.getRepos = function(userName){
