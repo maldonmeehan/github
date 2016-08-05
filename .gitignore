@@ -1,0 +1,8 @@
+# Hashtag comments out .gitignore items
+
+node_modules/
+.DS_Store
+bower_components/
+temp/
+build/
+# .env
