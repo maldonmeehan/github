@@ -1,4 +1,4 @@
-var Repo = require('./../js/github.js').Repo;
+var Repo = require('./../js/github.js').repoModule;
 
 $(document).ready(function() {
   var newUser = new Repo();
