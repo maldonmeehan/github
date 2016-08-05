@@ -25,7 +25,9 @@ $ gulp build
 ```
 $ gulp serve
 ```
-* apiKey: You will need to use a github API key, and create a file called ".env" in the top level of the directory, with this:
+apiKey:
+* get a github API key
+* create a file called ".env" in the top level of the directory, with this:
 
 exports.apiKey = "API-KEY-GOES-HERE";
 
