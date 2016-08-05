@@ -7,9 +7,10 @@ exports.Repo.prototype.getRepos = function(userName){
   $.get('https://api.github.com/users/' + userName + '?access_token=' + apiKey).then(function(response){
     $('.showUserName').empty();
     $('.showUserName').append('<h3>Username: '  + response.login + '</h3>');
-    // console.log(response);
+    $('.showImg').empty();
+    $('.showImg').append("<img src=" + response.avatar_url + ">");
   }).fail(function(error){
-    // console.log(error.responseJSON.Repo);
+
   });
 
   $.get('https://api.github.com/users/' + userName + '/repos?access_token=' + apiKey).then(function(response){
